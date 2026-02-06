@@ -1,0 +1,176 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+:root {
+    --red: #C17C74;
+    --light: #DDC9B4;
+    --aqua: #BCAC9B;
+    --light-blue: #7A6C5D;
+    --dark-blue: #2A3D45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+img {
+    width: 100px;
+}
+
+#hero-section {
+    width: 720px;
+    height: 343px;
+    background-image: url('images/irvine.jpg');
+    background-size: cover;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-section h1 {
+    color: #FFFFFF;
+    width: 225px;
+    height: 42px;
+    background: var(--dark-blue);
+    border-radius: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#hero-section h2 {
+    width: 412px;
+    height: 52px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: var(--light-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 11px;
+}
+
+#activities-section {
+    width: 720px;
+    background: var(--light);
+    margin: 0 auto;
+    color: var(--dark-blue);
+    padding: 40px 0;
+}
+
+#activities {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.activity-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#activities-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 54px;
+}
+
+.activity-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 23px;
+}
+
+.activity-div h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.activity-div p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#guide-section {
+    width: 720px;
+    height: 394px;
+    background: #FFFFFF;
+    margin: 0 auto 50px;
+    padding: 50px 160px;
+}
+
+#guide-inner-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    padding: 23px 13px;
+    width: 100%;
+    height: 100%;
+    background: var(--aqua);
+    border-radius: 10px;
+    box-shadow: 0 6px var(--dark-blue);
+}
+
+#guide-inner-div img {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#guide-text-div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+
+#guide-text-div h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+#guide-text-div p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 26px;
+    font-style: italic;
+}
+
+#guide-text-div h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#hero-section:hover, #activities-section:hover, #guide-section:hover {
+    border: 2px solid var(--red);
+}
